@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
+
+
+  <!-- SEO -->
+  <meta name="description" content="キャリアアップと新しい領域への挑戦として、Webアプリケーション開発に取り組むエンジニアのポートフォリオサイトです。" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text-main: #1f2933;
+      --text-sub: #6b7280;
+      --accent: #f87171;
+      --highlight: #fff3c4;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 960px;
+      padding: 4rem 1.5rem;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 3.2rem;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .highlight {
+      background: var(--highlight);
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .note {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: var(--highlight);
+      padding: 0.4em 0.7em;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      main {
+        max-width: 960px;
+      }
+    }
+
+  </style>
 </head>
 <body>
+    <main>
     <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+    <p class="subtitle">
+        This is my first GitHub Pages deployment!<br>
+        Web application development as the next step in my career
+    </p>
+
+    <section>
+      <div class="section-title">BACKGROUND</div>
+      <p>
+        これまで運用業務を中心に、システムの安定稼働や改善に携わってきました。<br>
+        日々の業務を通じて「<span class="highlight">仕組みそのものを作る側</span>」への関心が高まり、
+        キャリアアップと新しい領域への挑戦を決意しました。
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">CURRENT FOCUS</div>
+      <p>
+        現在は <span class="highlight">Webアプリケーション開発</span> を軸に学習・実践を進めています。
+        HTML・CSS・JavaScript を用いたフロントエンドの基礎から、
+        「実際に使われること」を意識した設計や実装に取り組んでいます。
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">GOALS</div>
+      <p>
+        単に動くものを作るだけでなく、
+        <span class="highlight">ユーザーにとって分かりやすく、保守しやすい</span>
+        Webアプリケーションを設計・開発できるエンジニアになることが目標です。
+        将来的にはフロントエンドからバックエンドまで一貫して関われるスキルを身につけたいと考えています。
+      </p>
+
+      <span class="note">Continuing to learn and build 🚀</span>
+    </section>
+  </main>
 </body>
 </html>
